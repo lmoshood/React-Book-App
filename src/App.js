@@ -5,8 +5,9 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import MainPage from './components/pages/MainPage';
-import SearchPage from './components/pages/SearchPage';
+
+import HomePage from './components/pages/HomePage';
+import Search from './components/pages/Search';
 
 class BooksApp extends Component {
 
@@ -14,10 +15,11 @@ class BooksApp extends Component {
 
         return (
             <div>
+        
                 <Router>
                     <Switch>
-                        <Route exact path='/' component={MainPage} />
-                        <Route exact path='/search' component={SearchPage} />
+                        <Route exact path='/' component={HomePage} />
+                        <Route exact path='/search' component={Search} />
                     </Switch>
 
                 </Router>

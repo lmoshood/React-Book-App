@@ -19,7 +19,7 @@ class Shelf extends Component {
             {
               books.map( 
                 
-                ((book, index) => <Book updateBook={updateBook} book={book} index={index} />))
+                ((book, index) => <Book updateBook={updateBook} book={book} index={index} key={book.id} />))
             }
               
           </ol>

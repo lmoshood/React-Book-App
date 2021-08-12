@@ -1,10 +1,10 @@
 # MyReads Project
 
-A Udacity React Developer Nanodegree 1st Project
+## TL;DR
 
 ## Project Overview
 
-In the MyReads project, I had created a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project is done React to build the application and provides an API server and client library.
+I had created a bookshelf app that allows you to select books from 3 categories of books you have read, are currently reading, or want to read. The project is done React to build the application and provides an API server and some client libraries.
 
 ## Project Demo
 
@@ -28,9 +28,9 @@ In the MyReads project, I had created a bookshelf app that allows you to select 
     ├── components # The app components
     │    ├── Books.js
     │    ├──  Shelf.js
-    │    └── pages # contain search and main page of the app
-    │        ├── MainPage.js
-    │        └──SearchPage.js
+    │    └── pages # contain search and home page of the app
+    │        ├── HomePage.js
+    │        └──Search.js
     │ 
     ├── index.css # Global styles. You probably won't need to change anything here.
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
@@ -49,14 +49,16 @@ In the MyReads project, I had created a bookshelf app that allows you to select 
 
 ## App Functionality
 
-In this application, the main page displays a list of "shelves" (i.e. categories), each of which contains a number of books. The three shelves are:
+In this application, the home page displays a list of books in shelves, with which contains 3 categories of books. The three shelves are:
 
 - Currently Reading
 - Want to Read
 - Read
 
-## How To Search A Book
+## Important
 
-For searching books, only some specific words are allowed. [Here](SEARCH_TERMS.md) is where you can find an exhaustive list of these words.
+The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the only terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
-This project was bootstrapped with [`Create React App`](https://github.com/facebookincubator/create-react-app) and integrated with some of the materials provided by the [`react nanodegree starter project`](https://github.com/udacity/reactnd-project-myreads-starter).
+## Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
